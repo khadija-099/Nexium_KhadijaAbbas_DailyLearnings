@@ -1,1 +1,10 @@
-mnxm
+PROJECT SET UP:
+npm init -y
+npm install prisma --save-dev
+npx prisma init
+npx prisma migrate dev --name init
+
+npx prisma init --db
+
+
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
