@@ -1,0 +1,22 @@
+PROJECT SET UP:
+npm init -y
+npm install prisma --save-dev
+npx prisma init
+OR
+npx prisma init --db
+npx prisma migrate dev --name init
+
+
+install PostgreSQL
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+GO TO pgAdmin (On the top left side server=> PostgreSQL 16 =>  double-click give your pass )
+left side ma database pr right click kro => create => database => khadija_db => Click Save
+Go to .env file replace the url with this DATABASE_URL="postgresql://postgres:YOUR_PASSWORD@localhost:5432/khadija_db"
+npx prisma migrate dev --name init
+(🔹 Ye aapka model database mein "migrate" karega
+🔹 User table PostgreSQL mein ban jayega
+🔹 Prisma aapko ek migration folder bhi de dega (prisma/migrations/)
+)
+
+
+
